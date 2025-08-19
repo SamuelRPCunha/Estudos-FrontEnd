@@ -163,6 +163,7 @@ body {
 
   .barra_navegacao {
     justify-content: center;
+    gap: 2rem;
   }
 
   .apresentacao {
@@ -177,5 +178,13 @@ body {
 
   .apresentacao_texto {
     width: auto;
+  }
+
+  .apresentacao_texto_SobreMim {
+    width: auto;
+  }
+
+  .lista_apresentacao {
+    margin-left: 10%;
   }
 }
