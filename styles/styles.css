@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Cores */
+  --cor-primaria: #000000;
+  --cor-segundaria: #F6F6F6;
+  --cor-terciaria: #22D4FD;
+  --cor-hover: #272727;
+
+  /* Fontes */
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-segundaria);
+}
+.cabecalho {  
+  padding: 2% 0 0 10%;
+}
+
+.barra_navegacao {
+  display: flex;
+  gap: 5rem;
+  margin: 0 0.625rem;
+}
+
+.botao_navegacao {
+  text-decoration: none;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5.125rem;
+  padding: 8% 15%;
+}
+
+.apresentacao_texto {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 2.5rem;
+
+}
+
+.titulo_apresentacao {
+  font-family: var(--fonte-primaria);
+  font-size: 2.25rem;
+}
+
+.destaque_apresentacao {
+  color: var(--cor-terciaria);
+}
+
+.paragrafo_apresentacao {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.redes_subtitulo {
+  font-family: var(--fonte-primaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.redes_botao {
+  
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--cor-segundaria);
+  border: 0.125rem solid;
+  border-color: var(--cor-terciaria);
+  
+  width: 50%;
+  padding: 1.34375rem 0;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+
+.redes_botao:hover {
+  background-color: var(--cor-hover);
+}
+
+.imagem_apresentacao {
+  width: 50%;
+}
+
+.rodape {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+
+  background-color: var(--cor-terciaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4775rem 0;
+  
+}
+
+/* Pagina Currículo */
+
+.apresentacao_SobreMim {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8% 15%;
+  gap: 5.125rem;
+}
+.apresentacao_texto_SobreMim {
+  display: flex;
+  flex-direction: column;
+  width: 38.4375rem;
+  gap: 5rem;
+}
+
+.lista_apresentacao {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+}
+
+.link_certificado {
+  color: var(--cor-terciaria);
+  text-decoration: none;
+}
+
+/* Deixando responsivo */
+
+@media (max-width: 1200px) {
+
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .barra_navegacao {
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  
+  .apresentacao_SobreMim {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao_texto {
+    width: auto;
+  }
+}
